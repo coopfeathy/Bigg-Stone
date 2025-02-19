@@ -2204,7 +2204,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
+    background-color: #0297B2;
     color: #010507;
     position: relative;
 }
@@ -2512,6 +2512,9 @@ html.no-csstransitions .home-content__main {
     margin-top: -23.4rem;
 }
 
+.walmart-logo{
+    border-radius: 20px;
+}
 
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
