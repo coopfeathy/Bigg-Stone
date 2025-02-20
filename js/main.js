@@ -9,7 +9,7 @@
     
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : ''   // mailchimp url
+        mailChimpURL   : 'https://bigg-stone.us12.list-manage.com/subscribe/post?u=d57e0acece787c67706eb8424&amp;id=0e48696ddc&amp;f_id=0002bae0f0'   // mailchimp url
     },
 
     $WIN = $(window);
