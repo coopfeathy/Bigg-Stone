@@ -1729,9 +1729,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     .s-header {
         height: 90px;
     }
-    /* .header-logo {
-        left: 30px;
-    } */
+    .header-logo img {
+        width: 100px;    
+    }
     .header-menu-toggle {
         right: 25px;
     }
