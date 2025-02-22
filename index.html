@@ -43,9 +43,10 @@
     <!-- header
     ================================================== -->
     <header class="s-header">
-        <br>
         <div class="header-logo">
-            <img src="images/logo.png" alt="Homepage">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
         </div>
 
         <nav class="header-nav">
@@ -56,17 +57,17 @@
                 <h3>Navigation</h3>
                 
                 <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <!-- <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li> -->
                     <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
                     <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <!-- <li><a class="smoothscroll"  href="#works" title="works">Works</a></li> -->
                     <li><a class="smoothscroll"  href="#clients" title="clients">Us</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
     
                 <!-- <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p> -->
     
-                <ul class="header-nav__social">
+                <!-- <ul class="header-nav__social">
                     <li>
                         <a href="#"><i class="fa fa-facebook"></i></a>
                     </li>
@@ -82,7 +83,7 @@
                     <li>
                         <a href="#"><i class="fa fa-dribbble"></i></a>
                     </li>
-                </ul>
+                </ul> -->
 
             </div> <!-- end header-nav__content -->
 
@@ -100,13 +101,59 @@
     ================================================== -->
     <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
 
+        
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
 
         <div class="home-content">
-
-            <div class="row home-content__main">
-                <br><br>
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <br><br><br>
+                    <h3 class="subhead subhead--dark">Hello There</h3>
+                    <h1 class="display-1 display-1--light">We Are Bigg-Stone Solutions</h1>
+                </div>
+            </div> 
+    
+            <div class="row about-desc" data-aos="fade-up">
+                <div class="col-full">
+                    <p>
+                        <!-- After 35+ years in Hollywood film studios, we launched our business to
+                        develop consumer-centric retail programs that tell a brand’s story. We
+                        specialize in guiding brands and suppliers into Walmart, ensuring they get on
+                        the shelf—and stay there. Passionate about innovation, we challenge the retail
+                        landscape to create products and programs that drive conversion and
+                        resonate with shoppers. -->
+                        Alison BIGGers and Pablo FeatherSTONE launched our business.....
+                    </p>
+                </div>
+            </div> 
+    
+            <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+                <div class="col-block stats__col">
+                    <div class="stats__count">100</div><h1 class="stats_after">%</h1>
+                    <h5>Peak Performance </h5>
+                    <p>We only work with clients <br> we know we can successfully <br> place in Walmart.</p>
+                </div>
+                <div class="col-block stats__col ">
+                    <div class="stats__count">50</div><h1 class="stats_after">+</h1>
+                    <h5>Summits Concquered</h5>
+                    <p>Driving brands and <br> categories to new leveles of <br> innovation.</p>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count">35</div>
+                    <h5>Years of Exsperience</h5>
+                    <p>Scaling new heights at <br> retail - and packing for the <br> next climb.</p>
+                </div>
+                
+                <div class="col-block stats__col">
+                    <div class="stats__count">1000000</div>
+                    <h5>More Zoom calls <br> than peaks on the Rockies</h5> 
+                </div>
+    
+            </div> 
+            <!-- <div class="row home-content__main">
+              
                 <h3>Welcome to Bigg-Stone</h3>
 
                 <h1>
@@ -126,20 +173,20 @@
                     </a>
                 </div>
 
-            </div>
+            </div> -->
 
             <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
+                <a href="#services" class="scroll-link smoothscroll">
                     <span>Scroll Down</span>
                 </a>
             </div>
 
-            <div class="home-content__line"></div>
+            <div class="home-content__line"></div> 
 
         </div> <!-- end home-content -->
 
 
-        <ul class="home-social">
+        <!-- <ul class="home-social">
             <li>
                 <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
@@ -155,7 +202,7 @@
             <li>
                 <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
             </li>
-        </ul> 
+        </ul>  -->
         <!-- end home-social -->
 
     </section> <!-- end s-home -->
@@ -163,14 +210,14 @@
 
     <!-- about
     ================================================== -->
-    <section id='about' class="s-about">
+    <!-- <section id='about' class="s-about">
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead subhead--dark">Hello There</h3>
                 <h1 class="display-1 display-1--light">We Are Bigg-Stone Solutions</h1>
             </div>
-        </div> <!-- end section-header -->
+        </div> 
 
         <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
@@ -183,7 +230,7 @@
                     resonate with shoppers.
                 </p>
             </div>
-        </div> <!-- end about-desc -->
+        </div> 
 
         <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
             
@@ -205,11 +252,11 @@
                 <h5>Quests Completed</h5> 
             </div>
 
-        </div> <!-- end about-stats -->
+        </div> 
 
         <div class="about__line"></div>
 
-    </section> <!-- end s-about -->
+    </section> -->
 
 
     <!-- services
@@ -219,7 +266,7 @@
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">What We Do</h3>
-                <h1 class="display-2">We’ve got everything you need to launch and grow your business</h1>
+                <h1 class="display-2">We are here to help brands successfully grow their business at Walmart</h1>
             </div>
         </div> <!-- end section-header -->
 
@@ -230,31 +277,9 @@
                     <i class="fa fa-lightbulb-o"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Data-driven insights</h3>
-                    <p>& trends to ready your brand for Walmart
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-line-chart"></i>
-                </div>
-                <div class="service-text">
-                    <h3 class="h2">Sales forecasting</h3>
-                    <p>& revenue projections
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-icon">
-                    <i class="fa fa-file-zip-o"></i>
-                </div>  
-                <div class="service-text">
-                    <h3 class="h2">Vendor agreement,</h3>
-                    <p>Terms, item set up, PO's, Replenishment
-                    </p>
+                    <h3 class="h2">Data-driven trends and insights</h3>
+                    <!-- <p>& trends to ready your brand for Walmart
+                    </p> -->
                 </div>
             </div>
 
@@ -263,9 +288,31 @@
                     <i class="fa fa-calendar-check-o"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">On-shelf readiness,</h3>
-                    <p>Marketing support, In-store POP
-                    </p>
+                    <h3 class="h2">Vendor & supply chain management</h3>
+                    <!-- <p>& revenue projections
+                    </p> -->
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-line-chart"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Sales forcasting & reporting</h3>
+                    <!-- <p>Terms, item set up, PO's, Replenishment
+                    </p> -->
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-file-zip-o"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Product development</h3>
+                    <!-- <p>Marketing support, In-store POP
+                    </p> -->
                 </div>
             </div>
 
@@ -274,9 +321,20 @@
                     <i class="fa fa-shopping-cart"></i>
                 </div>
                 <div class="service-text">
-                    <h3 class="h2">Sales reporting,</h3>
-                    <p>Item Maintenance, Supply Chain & Logistics
-                    </p>
+                    <h3 class="h2">On-shelf readiness</h3>
+                    <!-- <p>Item Maintenance, Supply Chain & Logistics
+                    </p> -->
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-level-up"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Marketing support</h3>
+                    <!-- <p>Item Maintenance, Supply Chain & Logistics
+                    </p> -->
                 </div>
             </div>
 
@@ -287,7 +345,7 @@
 
     <!-- works
     ================================================== -->
-    <section id='works' class="s-works">
+    <!-- <section id='works' class="s-works">
 
         <div class="intro-wrap">
                 
@@ -299,9 +357,9 @@
                     <br>
                     <h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>
                 </div>
-            </div> <!-- end section-header -->
+            </div> 
 
-        </div> <!-- end intro-wrap -->
+        </div> 
 
         <div class="row works-content">
             <div class="col-full masonry-wrap">
@@ -330,12 +388,12 @@
                                 <i class="icon-link"></i>
                             </a>
     
-                            <!-- <div class="item-folio__caption">
+                            <div class="item-folio__caption">
                                 <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
+                            </div>
     
                         </div>
-                    </div> <!-- end masonry__brick -->
+                    </div> 
 
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
@@ -360,12 +418,12 @@
                                 <i class="icon-link"></i>
                             </a>
     
-                            <!-- <div class="item-folio__caption">
+                            <div class="item-folio__caption">
                                 <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
+                            </div>
     
                         </div>
-                    </div> <!-- end masonry__brick -->
+                    </div> 
     
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
@@ -390,12 +448,12 @@
                                 <i class="icon-link"></i>
                             </a>
     
-                            <!-- <div class="item-folio__caption">
+                            <div class="item-folio__caption">
                                 <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
+                            </div>
     
                         </div>
-                    </div> <!-- end masonry__brick -->
+                    </div> 
     
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
@@ -420,12 +478,12 @@
                                 <i class="icon-link"></i>
                             </a>
     
-                            <!-- <div class="item-folio__caption">
+                            <div class="item-folio__caption">
                                 <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
+                            </div>
     
                         </div>
-                    </div> <!-- end masonry__brick -->
+                    </div>
 
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
@@ -450,12 +508,12 @@
                                 <i class="icon-link"></i>
                             </a>
     
-                            <!-- <div class="item-folio__caption">
+                            <div class="item-folio__caption">
                                 <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
+                            </div>
     
                         </div>
-                    </div> <!-- end masonry__brick -->
+                    </div>
     
                     <div class="masonry__brick" data-aos="fade-up">
                         <div class="item-folio">
@@ -480,20 +538,28 @@
                                 <i class="icon-link"></i>
                             </a>
     
-                            <!-- <div class="item-folio__caption">
+                            <div class="item-folio__caption">
                                 <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                            </div> -->
+                            </div>
     
                         </div>
-                    </div> <!-- end masonry__brick -->
+                    </div>
 
-                </div> <!-- end masonry -->
-            </div> <!-- end col-full -->
-        </div> <!-- end works-content -->
+                </div>
+            </div>
+        </div> 
 
-    </section> <!-- end s-works -->
+    </section>  -->
 
 
+
+
+
+
+
+
+
+    
     <!-- clients
     ================================================== -->
      <section id="clients" class="s-clients">

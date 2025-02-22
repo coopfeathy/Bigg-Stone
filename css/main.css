@@ -1446,24 +1446,31 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* -------------------------------------------------------------------
  * ## header logo
  * ------------------------------------------------------------------- */
-.header-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+ header-logo {
+    display: inline-block;
+    position: absolute;
     margin: 0;
     padding: 0;
-    left: 0px;
-    right: 0px;
-    top: 120px;
+    left: 40px;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    z-index: 499;
-    width: 100%;
+    z-index: 501;
 }
 
-.header-logo img{
+.header-logo a {
+    display: block;
+    margin: 9px 0 0 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    width: 80px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-logo a img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1726,11 +1733,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * header
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
-    /* .s-header {
+    .s-header {
         height: 90px;
-    } */
-    .header-logo img {
-        width: 200px;    
+    }
+    .header-logo {
+        left: 30px;
     }
     .header-menu-toggle {
         right: 25px;
@@ -2240,6 +2247,11 @@ html.no-csstransitions .home-content__main {
     text-align: center;
 }
 
+.stats_after{
+    display: inline;
+
+}
+
 .stats__col {
     margin: 5.4rem 0;
     padding: 0 2rem;
@@ -2256,6 +2268,7 @@ html.no-csstransitions .home-content__main {
 .stats__count {
     font-family: "montserrat-bold", sans-serif;
     font-size: 8.4rem;
+    display: inline;
     line-height: 1;
     color: #FFFFFF;
     position: relative;
@@ -2267,7 +2280,7 @@ html.no-csstransitions .home-content__main {
 .stats h5 {
     font-family: "montserrat-semibold", sans-serif;
     margin-top: 1.8rem;
-    color: #000000;
+    color: #fff;
     font-size: 1.8rem;
     line-height: 1.333;
     position: relative;
