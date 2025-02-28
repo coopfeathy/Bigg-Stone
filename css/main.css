@@ -1448,7 +1448,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
  header-logo {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     margin: 0;
     padding: 0;
     left: 40px;
@@ -1472,9 +1472,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-logo a img{
     display: block;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;  
+    width: 150px;  
     padding: 0; 
     border: none;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1736,8 +1737,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     .s-header {
         height: 90px;
     }
-    .header-logo {
-        left: 30px;
+    .header-logo a img {
+        width: 95px;
     }
     .header-menu-toggle {
         right: 25px;
@@ -2965,7 +2966,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-image: url("../images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 15rem;
