@@ -326,7 +326,6 @@
   /* Contact Form
     * ------------------------------------------------------ */
     var clContactForm = function() {
-        
         /* local validation */
         $('#contactForm').validate({
         
@@ -342,27 +341,15 @@
                         'Accept': 'application/json'
                     }
                 })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json().catch(() => {
-                        throw new Error('Invalid JSON response');
-                    });
-                })
-                .then(data => {
-                    if (data.success) {
-                        sLoader.slideUp("slow"); 
-                        $('.message-warning').fadeOut();
-                        $('#contactForm').fadeOut();
-                        $('.message-success').fadeIn();
-                    } else {
-                        throw new Error(data.message || "Something went wrong. Please try again.");
-                    }
+                .then(() => {
+                    sLoader.slideUp("slow"); 
+                    $('.message-warning').fadeOut();
+                    $('#contactForm').fadeOut();
+                    $('.message-success').fadeIn();
                 })
                 .catch(error => {
                     sLoader.slideUp("slow"); 
-                    $('.message-warning').html(error.message);
+                    $('.message-warning').html("Something went wrong. Please try again.");
                     $('.message-warning').slideDown("slow");
                 });
             }
