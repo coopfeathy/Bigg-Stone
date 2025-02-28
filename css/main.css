@@ -836,7 +836,7 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-    background: #0297B2;
+    background: #F3A21F;
     border-color: #0297B2;
     color: #FFFFFF;
 }
@@ -2536,6 +2536,10 @@ html.no-csstransitions .home-content__main {
 .works-content {
     max-width: 1160px;
     margin-top: -23.4rem;
+}
+
+.white{
+    color: white;
 }
 
 .walmart-logo{
