@@ -874,6 +874,14 @@
     <script src="js/main.js"></script>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        const express = require('express');
+        const app = express();
+
+        app.use((req, res, next) => {
+        res.header('Access-Control-Allow-Origin', '*');
+        next();
+        });
+
     </script>
 </body>
 
