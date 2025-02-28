@@ -660,37 +660,37 @@
 
                 <h3 class="h6">Send Us A Message</h3>
 
-                <form name="contactForm" id="contactForm" action="https://formsubmit.co/hello@bigg-stone.com" method="POST">
+                <form name="contactForm" id="contactForm" action="https://formsubmit.co/hello@bigg-stone.com" method="POST" novalidate="novalidate">
                     <fieldset>
                     
-                    <input type="hidden" name="_next" value="https://bigg-stone.com/thanks.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_url" value="https://bigg-stone.com">
+                        <input type="hidden" name="_url" value="https://bigg-stone.com">
+                        <input type="hidden" name="_next" value="https://bigg-stone.com/thanks.html">
+                        <input type="hidden" name="_captcha" value="false">
 
-                    <div class="form-field">
-                        <input name="name" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <input name="email" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <input name="_subject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
-                    </div>
-                    <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
-                    </div>
+                        <div class="form-field">
+                            <input name="name" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="email" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="_subject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        </div>
 
-                    <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
-                        <div class="submit-loader">
-                            <div class="text-loader">Sending...</div>
-                            <div class="s-loader">
-                                <div class="bounce1"></div>
-                                <div class="bounce2"></div>
-                                <div class="bounce3"></div>
+                        <div class="form-field">
+                            <button class="full-width btn--primary">Submit</button>
+                            <div class="submit-loader">
+                                <div class="text-loader">Sending...</div>
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                     </fieldset>
                 </form>
@@ -875,13 +875,6 @@
     <script src="js/main.js"></script>
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
-        const express = require('express');
-        const app = express();
-
-        app.use((req, res, next) => {
-        res.header('Access-Control-Allow-Origin', '*');
-        next();
-        });
 
     </script>
 </body>
