@@ -350,17 +350,12 @@
                         $('.message-warning').fadeOut();
                         $('#contactForm').fadeOut();
                         $('.message-success').fadeIn();
-                    } else {
-                        sLoader.slideUp("slow"); 
-                        $('.message-warning').html(data.message || "Something went wrong. Please try again.");
-                        $('.message-warning').slideDown("slow");
                     }
                 })
                 .catch(error => {
                     sLoader.slideUp("slow"); 
                     $('.message-warning').html("Something went wrong. Please try again.");
                     $('.message-warning').slideDown("slow");
-                    console.error(error);
                 });
             }
         });
