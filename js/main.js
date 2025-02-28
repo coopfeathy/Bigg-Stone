@@ -323,49 +323,51 @@
     };
 
 
-   /* Contact Form
+  /* Contact Form
     * ------------------------------------------------------ */
-var clContactForm = function() {
-    
-    /* local validation */
-    $('#contactForm').validate({
-    
-        submitHandler: function(form) {
-            var sLoader = $('.submit-loader');
+    var clContactForm = function() {
         
-            const formData = new FormData(form);
+        /* local validation */
+        $('#contactForm').validate({
         
-            fetch("https://formsubmit.co/hello@bigg-stone.com", {
-                method: "POST",
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                if (data.success) {
+            submitHandler: function(form) {
+                var sLoader = $('.submit-loader');
+            
+                const formData = new FormData(form);
+            
+                fetch("https://formsubmit.co/hello@bigg-stone.com", {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json().catch(() => {
+                        throw new Error('Invalid JSON response');
+                    });
+                })
+                .then(data => {
+                    if (data.success) {
+                        sLoader.slideUp("slow"); 
+                        $('.message-warning').fadeOut();
+                        $('#contactForm').fadeOut();
+                        $('.message-success').fadeIn();
+                    } else {
+                        throw new Error(data.message || "Something went wrong. Please try again.");
+                    }
+                })
+                .catch(error => {
                     sLoader.slideUp("slow"); 
-                    $('.message-warning').fadeOut();
-                    $('#contactForm').fadeOut();
-                    $('.message-success').fadeIn();
-                } else {
-                    throw new Error(data.message || "Something went wrong. Please try again.");
-                }
-            })
-            .catch(error => {
-                sLoader.slideUp("slow"); 
-                $('.message-warning').html(error.message);
-                $('.message-warning').slideDown("slow");
-            });
-        }
-    });
-};
+                    $('.message-warning').html(error.message);
+                    $('.message-warning').slideDown("slow");
+                });
+            }
+        });
+    };
 
    /* Animate On Scroll
     * ------------------------------------------------------ */
