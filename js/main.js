@@ -337,6 +337,7 @@
             
                 fetch("https://formsubmit.co/hello@bigg-stone.com", {
                     method: "POST",
+                    mode: 'no-cors',
                     body: formData,
                     headers: {
                         'Accept': 'application/json'
