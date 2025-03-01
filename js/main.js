@@ -154,11 +154,12 @@
 
    /* Stat Counter
     * ------------------------------------------------------ */
-    var clStatCount = function() {
+   var clStatCount = function() {
         
         var statSection = $(".about-stats"),
-            stats = $(".stats__count");
-
+            stats = $(".stats__count"),
+            lastStat = $(".stats__count_last");
+        
         statSection.waypoint({
 
             handler: function(direction) {
@@ -167,9 +168,10 @@
 
                     stats.each(function () {
                         var $this = $(this);
+                        var duration = ($this.is(lastStat)) ? 9000 : 4000; // Set duration to 9000 for the last stat
 
                         $({ Counter: 0 }).animate({ Counter: $this.text() }, {
-                            duration: 4000,
+                            duration: duration,
                             easing: 'swing',
                             step: function (curValue) {
                                 $this.text(Math.ceil(curValue));
@@ -207,76 +209,76 @@
 
    /* slick slider
     * ------------------------------------------------------ */
-    var clSlickSlider = function() {
+    // var clSlickSlider = function() {
 
-        $('.clients').slick({
-            arrows: false,
-            dots: true,
-            infinite: true,
-            slidesToShow: 6,
-            slidesToScroll: 2,
-            //autoplay: true,
-            pauseOnFocus: false,
-            autoplaySpeed: 1000,
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 5
-                    }
-                },
-                {
-                    breakpoint: 1000,
-                    settings: {
-                        slidesToShow: 4
-                    }
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 500,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                }
+    //     $('.clients').slick({
+    //         arrows: false,
+    //         dots: true,
+    //         infinite: true,
+    //         slidesToShow: 6,
+    //         slidesToScroll: 2,
+    //         //autoplay: true,
+    //         pauseOnFocus: false,
+    //         autoplaySpeed: 1000,
+    //         responsive: [
+    //             {
+    //                 breakpoint: 1200,
+    //                 settings: {
+    //                     slidesToShow: 5
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 1000,
+    //                 settings: {
+    //                     slidesToShow: 4
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 800,
+    //                 settings: {
+    //                     slidesToShow: 3,
+    //                     slidesToScroll: 2
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 500,
+    //                 settings: {
+    //                     slidesToShow: 2,
+    //                     slidesToScroll: 2
+    //                 }
+    //             }
 
-            ]
-        });
+    //         ]
+    //     });
 
-        $('.testimonials').slick({
-            arrows: true,
-            dots: false,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            adaptiveHeight: true,
-            pauseOnFocus: false,
-            autoplaySpeed: 1500,
-            responsive: [
-                {
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
-                        arrows: false,
-                        dots: true
-                    }
-                }
-            ]
-        });
+    //     $('.testimonials').slick({
+    //         arrows: true,
+    //         dots: false,
+    //         infinite: true,
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         adaptiveHeight: true,
+    //         pauseOnFocus: false,
+    //         autoplaySpeed: 1500,
+    //         responsive: [
+    //             {
+    //                 breakpoint: 900,
+    //                 settings: {
+    //                     slidesToShow: 1,
+    //                     slidesToScroll: 1
+    //                 }
+    //             },
+    //             {
+    //                 breakpoint: 800,
+    //                 settings: {
+    //                     arrows: false,
+    //                     dots: true
+    //                 }
+    //             }
+    //         ]
+    //     });
     
-    };
+    // };
 
    /* Smooth Scrolling
     * ------------------------------------------------------ */
@@ -436,7 +438,7 @@
         clPhotoswipe();
         clStatCount();
         clMasonryFolio();
-        clSlickSlider();
+        // clSlickSlider();
         clSmoothScroll();
         clPlaceholder();
         clAlertBoxes();

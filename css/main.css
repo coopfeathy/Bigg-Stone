@@ -1236,6 +1236,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-top: 0;
 }
 
+.small-display-2 {
+    font-family: "montserrat-medium", sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    margin-top: 0;
+}
+
 .display-2--light {
     color: #FFFFFF;
 }
@@ -2277,6 +2284,17 @@ html.no-csstransitions .home-content__main {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.stats__count_last {
+    font-family: "montserrat-bold", sans-serif;
+    font-size: 8.4rem;
+    display: inline;
+    line-height: 1;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 .stats h5 {
     font-family: "montserrat-semibold", sans-serif;
@@ -2331,6 +2349,9 @@ html.no-csstransitions .home-content__main {
         max-width: 600px;
     }
     .stats__count {
+        font-size: 8rem;
+    }
+    .stats__count_last {
         font-size: 8rem;
     }
     .stats h5 {
@@ -2389,6 +2410,9 @@ html.no-csstransitions .home-content__main {
     .stats__count {
         font-size: 7.8rem;
     }
+    .stats__count_last {
+        font-size: 7.8rem;
+    }
 }
 
 
@@ -2438,6 +2462,7 @@ html.no-csstransitions .home-content__main {
     color: #0297B2;
     font-size: 4.8rem;
     margin-top: -.6rem;
+    width: 95px;
 }
 
 
@@ -2487,8 +2512,8 @@ html.no-csstransitions .home-content__main {
     }
     .services-list .service-icon {
         font-size: 4.5rem;
-        float: none;
         margin-top: 0;
+        width: 50px;
     }
 }
 
@@ -2802,10 +2827,13 @@ html.no-csstransitions .home-content__main {
  * ## testimonials
  * ------------------------------------------------------------------- */
 .clients-testimonials {
-    margin-top: 4.2rem;
     padding-top: 7.2rem;
     text-align: center;
     position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .clients-testimonials::before {
@@ -2824,7 +2852,10 @@ html.no-csstransitions .home-content__main {
 }
 
 .clients-testimonials .testimonials {
-    margin: 0 10%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .clients-testimonials .testimonials p {
@@ -2843,7 +2874,7 @@ html.no-csstransitions .home-content__main {
     height: 8.4rem;
     width: 8.4rem;
     border-radius: 50%;
-    margin: 0 auto 1.2rem auto;
+    margin-top: 50px;
 }
 
 .clients-testimonials .testimonials__name, 
@@ -2903,7 +2934,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
     .clients-testimonials .testimonials {
-        margin: 0 12%;
+        flex-direction: column;
     }
     .clients-testimonials .testimonials p {
         font-size: 2.6rem;
