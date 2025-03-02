@@ -2458,9 +2458,9 @@ html.no-csstransitions .home-content__main {
     padding-left: 50px;
 }
 
-.services-list .service-text {
+/* .services-list .service-text {
     margin-left: 7.8rem;
-}
+} */
 
 .services-list .service-icon {
     float: left;
@@ -2503,7 +2503,7 @@ html.no-csstransitions .home-content__main {
     .services-list {
         margin-top: 4.2rem;
         max-width: 500px;
-        text-align: center;
+        /* text-align: center; */
     }
     .services-list .service-item:nth-child(n) {
         padding-right: 15px;
@@ -2512,9 +2512,9 @@ html.no-csstransitions .home-content__main {
     .services-list h3 {
         font-size: 3rem;
     }
-    .services-list .service-text {
+    /* .services-list .service-text {
         margin-left: 0;
-    }
+    } */
     .services-list .service-icon {
         font-size: 4.5rem;
         margin-top: 0;
